@@ -1,0 +1,20 @@
+#research-project-section{
+    width: 60%;
+}
+#research-project-section div{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+
+@media screen and (max-width: 752px) {
+    #research-project-section{
+        width: 90%;
+    }
+
+    /* #research-project-section div{
+        border: 1px solid;
+    } */
+}
