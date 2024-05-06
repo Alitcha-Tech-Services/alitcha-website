@@ -1,0 +1,14 @@
+#conference-item{
+    width: 280px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 25px 15px;
+    margin: auto;
+}
+
+#conference-item div, #conference-item h5{
+    text-align: left;
+}
