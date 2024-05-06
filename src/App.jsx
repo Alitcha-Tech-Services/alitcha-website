@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './styles/global.css';
@@ -20,6 +17,7 @@ import ConditionSection from './components/features/ConditionSection';
 function App() {
 
 
+
   return (
     <>
       <ProjectSession />
@@ -36,4 +34,3 @@ function App() {
 }
 
 export default App
->>>>>>> d2945ed (creation des composants)
