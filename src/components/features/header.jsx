@@ -1,18 +1,7 @@
-//<Button variant="outline-#EF7B20" href="#intranet">Connexion Intranet</Button>
-//eventKey={2}
-// #FF5733
-//#ef9c2036
-//#EF7B2027
-//responsive-navbar-nav
-//offcanvasNavbar-expand-lg
-//collapseOnSelect
-// export default ResponsiveNav;
-
 import { Navbar, Nav, Container} from 'react-bootstrap';
 import logo from './../../assets/_logo-alitcha_.png';
 import './../../styles/features/header.css';
 import CustomButton from  './../commons/button';
-//import Offcanvas from 'react-bootstrap/Offcanvas';
 
 function ResponsiveNav() {
     return (
