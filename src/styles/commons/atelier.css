@@ -1,0 +1,29 @@
+#atelier-item{
+    width: 265px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    margin: auto;
+
+}
+
+#atelier-item > div:first-child{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#atelier-item span {
+    display: inline-block;
+}
+
+#atelier-item > div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
