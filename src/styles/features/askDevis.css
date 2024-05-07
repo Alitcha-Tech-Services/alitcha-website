@@ -1,0 +1,29 @@
+body{
+    background: black;
+    padding: 0px;
+    margin: 0px;
+}
+.askDevisContainer{
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.458);
+    width: 70%;
+    padding: 30px;
+}
+
+.afterAskDevisContainer{
+    width: 80%;
+    padding: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .askDevisContainer{
+        width: 96%;
+        padding: 3px;
+    }
+
+    .afterAskDevisContainer{
+        width: 96%;
+        padding: 3px;
+        border: none;
+    }
+}
