@@ -33,8 +33,4 @@ function App() {
   )
 }
 
-<<<<<<< HEAD
 export default App
-=======
-export default App
->>>>>>> 6a56b53d56b88168e63a5b5750a434fb2d5468fd
