@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './styles/global.css';
@@ -36,4 +33,3 @@ function App() {
 }
 
 export default App
->>>>>>> d2945ed (creation des composants)
