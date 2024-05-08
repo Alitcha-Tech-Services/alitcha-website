@@ -18,7 +18,9 @@
 
 .custom-button.active {
     background-color: var(--active-background-color);
-}@media screen and (min-width : 450px){
+}
+
+@media screen and (min-width : 450px){
     .button{
         background-color:"#EF7B20"; 
         width:"215px"; 
