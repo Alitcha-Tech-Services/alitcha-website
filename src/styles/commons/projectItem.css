@@ -1,0 +1,11 @@
+.projet-item {
+    width: 335px;
+    height: 314px;
+    margin: 15px;
+    background-image: linear-gradient(to right, black, black),
+    linear-gradient(90deg, #EF7B20, #000, #000, #EF7B20);
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: .2px solid transparent;
+    border-radius: 10px;
+}

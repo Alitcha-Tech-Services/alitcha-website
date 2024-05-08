@@ -1,0 +1,11 @@
+#atelier-section{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+@media screen and (max-width: 752px){
+    #atelier-section{
+        width: 100%;
+    }
+}

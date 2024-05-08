@@ -1,0 +1,37 @@
+@media screen and (min-width : 450px){
+    .button{
+        background-color:"#EF7B20"; 
+        width:"215px"; 
+        height:"58px",;
+        font-size:"20px,";
+        font-weight:"bold"
+    }
+}.custom-button {
+    transition: 0.3s;
+    margin-right: 15px;
+}
+
+.custom-button:hover {
+    color: var(--hover-text-color);
+    border-color: var(--hover-border-color);
+}
+
+.custom-button.active {
+    background-color: var(--active-background-color);
+}@media screen and (min-width : 450px){
+    .button{
+        background-color:"#EF7B20"; 
+        width:"215px"; 
+        height:"58px",;
+        font-size:"20px,";
+        font-weight:"bold"
+    }
+}@media screen and (min-width : 450px){
+    .button{
+        background-color:"#EF7B20"; 
+        width:"215px"; 
+        height:"58px",;
+        font-size:"20px,";
+        font-weight:"bold"
+    }
+}
