@@ -1,0 +1,11 @@
+.conference-item {
+    background-color: rgba(37, 37, 37, 0.062);
+    width:280px;
+    height: 280px;
+    text-align: left;
+    color:#ffffffb7;
+  }
+  .conference-item h3,p {
+    margin-top: 40px;
+    margin-left: 40px;
+  }

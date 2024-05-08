@@ -1,0 +1,20 @@
+
+/* Bouton Souscrire*/
+.subscribe-button {
+    margin-top: 20px;
+    margin-left: 40px;
+    background-color: transparent; /* Fond transparent */
+    border: 2px solid #ffffff25; /* Bordure solide de 2px */
+    color: #ffffff25; /* Couleur du texte */
+    padding: 8px 16px; /* Espacement intérieur du bouton */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur de type pointeur au survol */
+    transition: background-color 0.3s, color 0.3s; /* Transition en douceur pour les changements de couleur */
+  }
+  
+  .subscribe-button:hover {
+    background-color: #000; /* Fond noir au survol */
+    color: orange; /* Texte blanc au survol */
+    border: 2px solid orange;
+  }
+  
