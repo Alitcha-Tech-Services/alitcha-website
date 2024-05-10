@@ -1,4 +1,4 @@
-import 'D:/Projets Developpement/alitcha-website/src/styles/features/RejoindreAlitchaSection.css'
+import './../../styles/features/RejoindreAlitchaSection.css'
 
 
 export default function RejoindreAlitchaSection()

@@ -5,6 +5,7 @@ import './About.css';
 import { useEffect, useRef } from 'react';
 // import EquipeSlide from "./../../components/features/EquipeSlide";
 import OurVisionCard from "./../../components/features/OurVisionCard";
+// import TeamMember from "./../../components/commons/TeamMember";
 
 
 function About(){
@@ -35,6 +36,9 @@ function About(){
                 </div>
                 {/* <div>
                     <EquipeSlide />
+                </div> */}
+                {/* <div>
+                    <TeamMember />
                 </div> */}
                 <div>
                     <JoinAlitchaButton />

@@ -1,5 +1,4 @@
-import Samuel from 'D:/Projets Developpement/alitcha-website/src/assets/Samuel.png';
-import React from 'react';
+import Samuel from './../../assets/Samuel.png';
 import './../../styles/features/CarrouselMembres.css';
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import { useState } from 'react';
