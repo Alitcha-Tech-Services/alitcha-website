@@ -1,0 +1,46 @@
+.AdhesionFormContainer{
+width: 1519px;
+height: 100%;
+/* background-color: red; */
+display: flex;
+justify-content: center;
+}
+.AdhesionFormComponent{
+    background-color: black;
+    width: 100%;
+}
+.AdhesionForm
+{
+    width: 80%;
+    border: 1px solid orange;
+    color: white;
+    padding: 20px;
+}
+.AdhesionForm>p
+{
+    margin: 10px;
+}
+.AdhesionForm>h5{
+    /* color: white; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+.SubmitAdhesion
+{
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    border: none;
+    /* position: relative; */
+    
+}
+.SubmitContainer
+{
+    display: flex;
+    justify-content: center;
+}
+.AdhesionForm>* 
+{
+    margin: 25px 0px;
+}
+/* ----------------------------- */
