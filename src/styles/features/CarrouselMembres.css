@@ -1,0 +1,67 @@
+.TeamSection
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  height: 700px;
+  background-color: black;
+  color: white;
+}
+.TeamSection>*
+{
+  text-align: center;
+  font-size: 22px;
+}
+.BlocMember
+{
+  width: 50%;
+  height: 80%;
+}
+  .ImgMember
+  {
+    width: 400px;
+    height: 400px;
+    /* width: 764px;
+    height: 764px; */
+  }
+  .NameMember
+  {
+    margin-top: 20px;
+  }
+.TeamImages
+{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.BlocImgMember
+{
+  margin-right: 20px;
+}
+.BlocNextImg
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.NextImgMember
+{
+  width: 150px;
+  height: 150px;
+}
+.NextTitle
+{
+  font-size: 10px;
+}
+.BlocScroll
+{
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.BlocScroll>*
+{
+border: 1px solid orange;
+border-radius: 50%;
+}
