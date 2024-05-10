@@ -2,6 +2,7 @@ import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaGlobe } from 'react-icons/fa';
 import './../../styles/features/footer.css'; 
 import logo from './../../assets/logo-alitcha.png'
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -19,24 +20,11 @@ function Footer() {
           <Col>
             <div className="footerNav d-flex justify-content-center">
               <div className="footerNav_Nav d-flex justify-content-between">
-                <Nav.Item class="_w-100_">
-                  <Nav.Link href="#">Accueil</Nav.Link>
-                </Nav.Item>
-                <Nav.Item class="_w-100_">
-                  <Nav.Link href="#">Services</Nav.Link>
-                </Nav.Item>
-                <Nav.Item class="_w-100_">
-                  <Nav.Link href="#">A Propos</Nav.Link>
-                </Nav.Item>
-                <Nav.Item class="_w-100_">
-                  <Nav.Link href="#">Réalisations</Nav.Link>
-                </Nav.Item>
-                <Nav.Item class="_w-100_">
-                  <Nav.Link href="#">Blog</Nav.Link>
-                </Nav.Item>
-                <Nav.Item class="_w-100_">
-                  <Nav.Link href="#">Evènements</Nav.Link>
-                </Nav.Item>
+                <Nav.Item class="_w-100_"><Nav.Link as={NavLink} to="/Home">Accueil</Nav.Link></Nav.Item>
+                <Nav.Item class="_w-100_"><Nav.Link as={NavLink} to="/Solution">Solution</Nav.Link></Nav.Item>
+                <Nav.Item class="_w-100_"><Nav.Link as={NavLink} to="/About">A Propos</Nav.Link></Nav.Item>
+                <Nav.Item class="_w-100_"><Nav.Link as={NavLink} to="/Blog">Blog</Nav.Link></Nav.Item>
+                <Nav.Item class="_w-100_"><Nav.Link as={NavLink} to="/Events">Evènements</Nav.Link></Nav.Item>
               </div>
             </div>
           </Col>
