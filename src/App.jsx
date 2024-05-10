@@ -15,7 +15,7 @@ import Intranet from './pages/Intranet/Intranet';
 const App = () => (
   <Router>
     <Header />
-    
+
     <Routes>
       {/* <Route path="/" element={<Home />} /> */}
       {/* <Route path="/Home" element={<Home />} /> */}
