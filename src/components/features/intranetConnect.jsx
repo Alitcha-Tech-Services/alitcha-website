@@ -1,31 +1,53 @@
-import { Container} from 'react-bootstrap';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
-import Form from 'react-bootstrap/Form';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as yup from 'yup';
+import { Container, FloatingLabel, Button} from 'react-bootstrap';
 import './../../styles/features/askDevis.css'; 
-import CustomButton from  './../commons/button';
 
-function IntranetConnect() {
+// Schéma de validation avec yup
+
+const validationSchema = yup.object({
+    username: yup.string().required("Votre Nom est requis"),
+    email: yup.string().email("Email invalide").required("Email est requis"),
+    comment: yup.string().required("Votre Motivation est requis"),
+});
+
+const IntranetConnect = () => {
     return (
-        <Container className='askDevisContainer d-flex justify-content-center'>
-            <div className='afterAskDevisContainer'>
-            <h4 className='text-white text-center'>Connexion Intranet</h4>
-            <Form>
-                <FloatingLabel controlId="floatingUsername" label="username" className="mt-5 mb-5">
-                    <Form.Control type="text" placeholder="Votre Nom et Prenoms" required/>
-                </FloatingLabel>
-                <FloatingLabel controlId="floatingInput" label="Email address" className="mt-5 mb-5">
-                    <Form.Control type="email" placeholder="name@example.com" required/>
-                </FloatingLabel>
-                <FloatingLabel controlId="floatingTextarea2" label="Pourquoi voulez -vous rejoindre le réseau intranet d’Alitcha ?" className='mt-5 mb-4'>
-                    <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: '125px' }} required/>
-                </FloatingLabel>
-                <div className='d-flex justify-content-center align-items-center'>
-                    <CustomButton text=' Envoyez la demande ->' className='text-center' type="submit"></CustomButton>
+        <div className="transition-container">
+            <Container className="askDevisContainer d-flex justify-content-center">
+                <div className="afterAskDevisContainer">
+                    <h4 className="text-white text-center mb-5">Connexion Intranet</h4>
+                    <Formik initialValues={{username: '', email: '', comment: '' }} validationSchema={validationSchema} onSubmit={(values) => {console.log('Formulaire soumis:', values);}}>
+                        {({ isSubmitting }) => (
+                            <Form>
+                                <inputLabel id="floatingUsername" label="Votre Nom et votre Prénom">
+                                    <Field name="username" type="text" placeholder="Votre Nom et votre Prénoms" className="form-control" style={{height: '50px'}}/>
+                                    <ErrorMessage name="username" component="div" className="text-danger text-start" />
+                                </inputLabel>
+
+                                <p style={{ height: '40px' }}></p>
+
+                                <inputLabel id="floatingEmail" label="Adresse Email" >
+                                    <Field name="email" type="email" placeholder="name@example.com" className="form-control" style={{height: '50px'}}/>
+                                    <ErrorMessage name="email" component="div" className="text-danger text-start" />
+                                </inputLabel>
+
+                                <FloatingLabel controlId="floatingTextarea2" label="Pourquoi voulez-vous rejoindre le réseau intranet d'Alitcha?" className="mt-5 mb-4">
+                                    <Field name="comment" as="textarea" placeholder="Raison pour rejoindre" style={{ height: '140px' }} className="form-control"/>
+                                    <ErrorMessage name="comment" component="div" className="text-danger text-start" />
+                                </FloatingLabel>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <Button className="text-center intranet_button" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
+                                </div>
+                            </Form>
+                        )}
+                    </Formik>
                 </div>
-            </Form>
-            </div>
-        </Container>
+            </Container>
+        </div>
     );
-}
+};
 
 export default IntranetConnect;
+

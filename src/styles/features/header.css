@@ -1,8 +1,8 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     width: 100%;
-}
+} */
 
 .navbarHeaderContainer{
     width: 100%;
@@ -49,6 +49,31 @@
     width: 50%;
 }
 
+.header_button{
+    margin-right: 15px;
+    background-color: black !important;
+}
+
+.header_button_first{
+    border: 1px solid white;
+}
+
+.header_button_second{
+    border: 1px solid white;
+}
+
+.header_button:hover{
+    border: 1px solid #EF7B20;
+}
+
+.header_button:active{
+    border: 1px solid #EF7B20;
+}
+
+.header_button_ .active{
+    border: 1px solid #EF7B20 !important;
+}
+
 @media screen and (max-width: 1000px) {
     ._intranet_devis_{
         margin: 25px;
@@ -72,5 +97,9 @@
 
     ._w-auto_:hover{
         border: 1px solid #EF7B20;
+    }
+
+    .header_button{
+        margin-bottom: 15px;
     }
 }
