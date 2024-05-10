@@ -3,7 +3,7 @@ import './../../styles/features/detailArticle.css';
 /* eslint-disable react/prop-types */
 
 export default function ArticleFunction({title, titleDetails, detailArticleImage1, text1, text2, imageTitle, detailArticleImage2, text3, datePublishing}) {
-  return (
+    return (
     <div>
         <div className='container text-white mt-5 mb-5'>
             <div className='d-flex justify-content-between articleDetailTitle'>
@@ -27,5 +27,5 @@ export default function ArticleFunction({title, titleDetails, detailArticleImage
             </div>
         </div>
     </div>
-  )
+    )
 }

@@ -5,7 +5,6 @@ export default function Button({ type , text, className}){
             <button 
                 type={type} 
                 className={className} 
-                // style={{backgroundColor:"#EF7B20", width:"215px", height:"58px", fontSize:"20px,", fontWeight:"bold"}}
                 
             >{text}</button>
         </>
