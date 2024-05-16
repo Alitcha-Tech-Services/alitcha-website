@@ -39,8 +39,8 @@ export default function Newsletter() {
 
                         <div className='newsletter-input-container'>
                             <div className="input-group mb-2 mt-1">
-                                <span className="input-group-text">
-                                    <HiOutlineMail size={25}  className='text-color-primary'/>
+                                <span className="input-group-text w-auto">
+                                    <HiOutlineMail size={25}  className='text-color-primary' />
                                 </span>
                                 <Field
                                     type="email"
@@ -50,7 +50,7 @@ export default function Newsletter() {
                                     className="form-control newsletter-input"
                                 />
                             </div>
-                            <button type="submit" className="background-primary text-white button-hover newsletter-button">
+                            <button type="submit" className="background-primary text-white button-hover newsletter-button w-auto">
                                 Souscrire
                             </button>
                         </div>

@@ -1,0 +1,35 @@
+.EquipeSlideBody{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.EquipeSlideBody>div{
+    width: 50%;
+}
+._image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img_image-container{
+    max-width: 290px;
+    max-height: 290px;
+}
+
+.card {
+    background-color: #ef7a20ee;
+    width: auto;
+    border-radius: 10px;
+    margin-left: 15%;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        margin-left: 1%;
+    }
+}
+
