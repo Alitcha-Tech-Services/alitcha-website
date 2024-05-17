@@ -5,7 +5,8 @@ body{
 }
 .askDevisContainer{
     background-color: black;
-    border: 1px solid rgba(255, 255, 255, 0.458);
+    /* border: 1px solid rgba(255, 255, 255, 0.458); */
+    border: 1px solid #ef7a2077;
     width: 70%;
     padding: 30px;
 }
@@ -13,6 +14,45 @@ body{
 .afterAskDevisContainer{
     width: 80%;
     padding: 30px;
+}
+
+.transition-container {
+    animation: slide-in 2s;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.join_alitcha_button{
+    color: #EF7B20;
+    border: 1px solid #EF7B20;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.join_alitcha_button:hover{
+    color: white;
+    border: 1px solid #EF7B20;
+    border-radius: 20px;
+    background-color: #EF7B20;
+}
+
+.intranet_button{
+    color: #EF7B20;
+    border: 1px solid #EF7B20;
+    background-color: black;
+    width: auto;
+}
+
+.intranet_button:hover{
+    background-color: #EF7B20;
+    border: 1px solid #EF7B20;
 }
 
 @media screen and (max-width: 767px) {

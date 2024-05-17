@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/features/Header';
+import Footer from './components/features/Footer';
 import './styles/global.css';
 import './styles/variable.css';
 import ProjectSession from './components/features/ProjectSection';
@@ -12,8 +14,6 @@ import ProgrammeSection from './components/features/ProgrammeSection';
 import FormationSection from './components/features/FormationSection';
 import ConditionSection from './components/features/ConditionSection';
 import Event from './pages/Events/Event';
-import SolutionPage from './pages/SolutionPage/SolutionPage'
-import RejoindreAlitchaPage from './pages/RejoindreAlitchaPage/RejoindreAlitchaPage'
 
 function App() {
 
@@ -21,9 +21,7 @@ function App() {
 
   return (
     <>
-      <SolutionPage />
-      <RejoindreAlitchaPage />
-      {/* <Event /> */}
+      <Event />
       {/* <ProjectSession />
       <Newsletter />
       <ConferenceSection />
