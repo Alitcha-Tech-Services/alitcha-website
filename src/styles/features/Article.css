@@ -1,131 +1,101 @@
-.article {
-    width: 320px;
-    height: 530px;
-    position: relative;
-  }
-  
-  .image-container {
+.containerArticleContainer{
     width: 100%;
-    height: 320px;
-    /* position: relative; */
-  }
-  
-  /* .img-fluid {
-    width: 100%;
-    height: 100%;
-  } */
-  
-  .circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: orange;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 20px); /* Pour centrer le cercle */
-    transform: translate(0, 50%);
-  }
-  
-  .text-container {
-    /* padding: 10px; */
-  }
-  
-  .text-container p {
-    /* margin: 5px 0; */
-  }
-  
-  .article::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(to left bottom, transparent, orange);
-  }
-
-  .BlocArticles
-{
-  /* align-items: center; */
-  /* justify-content: center; */
-  display: flex;
-  /* text-align: center; */
-  width: 100%;
-  /* width: 100%; */
-  /* border: solid; */
-  justify-content: center;
-  
-}
-.BlocArticles>div{
-  /* width: 80%;
-  display: flex;
-  justify-content: space-around; */
-}
-.titleArticles
-{
-  text-align: center;
-}
-  
-.CerclePlus
-{
-  position: relative;
-  bottom: 40px;
-  color: white;
-  font-weight: bolder;
-}
-
-
-
-.bloc {
-  width: 320px;
-  height: 500px;
-  /* border: solid red; */
-  }
-.articles {
-    width: 320px;
-    height: 460px;
-    position: relative;
-    border: 2px solid orange;
-    border-radius: 20px;
-}
-  
-  .image-container {
-    width: 100%;
-    height: 320px;
-    position: relative;
-    border: solid;
-    border-radius: inherit;
-  }
-  
-  .img-fluid {
-    width: 100%;
-    height: 100%!important;
-    border-radius: inherit;
-  }
-  
-  .circle {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: orange;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 20px); 
-    /* transform: translate(0, 50%); */
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    /* justify-items: center; */
+    margin-bottom: 80px;
+}
+
+.containerArticleContainer>div{
+    width: 90%;
+}
+
+.articleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.articleContainer>div{
+  margin-bottom: 25px;
+  min-width: 280px;
+  max-width: 310px;
+}
+
+._bloc {
+  max-width: 310px;
+  min-width: 280px;
+  height: auto
+}
+
+._article {
+    border: 1px solid #ef7a2083;
+    border-radius: 10px;
+    height: auto
+}
+
+._article:hover {
+  border: 2px solid #ef7a2066;
+  padding: 0.5rem;
+  box-shadow: 4px 6px 8px #ef7a2083;
+}
+
+.articles {
+  max-width: 310px;
+  min-width: 280px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-container {
+    width: 100%;
+    height: 320px;
+}
+
+.img-fluid{
+    width: auto;
+    height: 320px;
+    border-radius: 8px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.CerclePlus{
+    position: relative;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -20px;
+    background-color: #EF7B20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 25px;
-  }
-  
-  .text-container {
+}
+
+.CerclePlus:hover{
+    background-color: #EF7B20;
+}
+
+
+.text-container {
     margin-top: 40px;
     padding: 10px;
     height: 140px;
-  }
-  
-  .text-container p {
+}
+
+.text-container p {
     margin: 5px 0;
+}
+
+@media screen and (max-width: 1452px) {
+  .articleContainer{
+      display: flex;
+      flex-wrap: wrap;
   }
-  
+}
