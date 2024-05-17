@@ -38,6 +38,7 @@
   border: 2px solid #ef7a2066;
   padding: 0.5rem;
   box-shadow: 4px 6px 8px #ef7a2083;
+  transition: 0.4s linear;
 }
 
 .articles {
