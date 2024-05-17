@@ -1,0 +1,26 @@
+.SolutionSection
+{
+    display: flex;
+    border: solid;
+    justify-content: space-around;
+    justify-items: center;
+}
+.SolutionItem
+{
+    background-color: white;
+    width: 466px;
+    height: 292px;
+    border: red solid;
+}
+.DesignColumn, .DevColumn
+{
+    display: flex;
+    flex-direction: column;
+}
+.SolutionsDesign, .SolutionsDev
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: blue solid;
+}

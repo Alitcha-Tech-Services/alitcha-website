@@ -12,6 +12,8 @@ import ProgrammeSection from './components/features/ProgrammeSection';
 import FormationSection from './components/features/FormationSection';
 import ConditionSection from './components/features/ConditionSection';
 import Event from './pages/Events/Event';
+import SolutionPage from './pages/SolutionPage/SolutionPage'
+import RejoindreAlitchaPage from './pages/RejoindreAlitchaPage/RejoindreAlitchaPage'
 
 function App() {
 
@@ -19,7 +21,9 @@ function App() {
 
   return (
     <>
-      <Event />
+      <SolutionPage />
+      <RejoindreAlitchaPage />
+      {/* <Event /> */}
       {/* <ProjectSession />
       <Newsletter />
       <ConferenceSection />
