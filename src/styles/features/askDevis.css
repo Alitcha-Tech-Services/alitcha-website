@@ -5,7 +5,6 @@ body{
 }
 .askDevisContainer{
     background-color: black;
-    /* border: 1px solid rgba(255, 255, 255, 0.458); */
     border: 1px solid #ef7a2077;
     width: 70%;
     padding: 30px;
@@ -32,7 +31,7 @@ body{
 .join_alitcha_button{
     color: #EF7B20;
     border: 1px solid #EF7B20;
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: black;
 }
 
@@ -40,7 +39,7 @@ body{
     color: white;
     border: 1px solid #EF7B20;
     border-radius: 20px;
-    background-color: #EF7B20;
+    background-color: black;
 }
 
 .intranet_button{

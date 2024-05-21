@@ -1,30 +1,37 @@
-import './../../styles/features/Article.css'; 
-import { FaRegStar } from 'react-icons/fa';
-import { GrDownload, GrAdd } from 'react-icons/gr';
-import Velo from '../../assets/velo-nature.jpg';
+import { GrAdd } from 'react-icons/gr';
+import { FaDownload, FaRegStar } from 'react-icons/fa';
+import { Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
-export default function Article() {
+/* eslint-disable react/prop-types */
+
+export default function Article({image, articleTitle, nomAuteur, datePublished }) {
 
     return (
+        <div className='_bloc'>
+            <div className='_article'>
+                <div className="articles">
+                    <div className="image-container">
+                        <img src={image} alt="lmage" className="img-fluid" />
+                    </div>
+                    <div className="circle">
+                        <Button as={NavLink} to='/Detail-Article' className='CerclePlus' type='button'><GrAdd /></Button>
+                    </div>
+                </div>
+                <div className="text-container">
+                    <p>{articleTitle}</p>
+                    <p>Ecrit par {nomAuteur}</p>
+                    <p>Publié le {datePublished} </p>
+                </div> 
+            </div>
         
-        <div className='bloc'>
-        <div className="articles">
-         <div className="image-container">
-            <img src={Velo} alt="Image" className="img-fluid" />
-            <div className="circle CerclePlus"><GrAdd /></div>
-          </div>
-          <div className="text-container">
-            <p>Article sur lIA </p>
-            <p>Ecrit par Joseph AYI</p>
-            <p>Publié le 24/08/1/24 à 16h </p>
-          </div> 
-        
-        <div>
-           <FaRegStar />  
-           <GrDownload /> 
+            <div className='w-100 d-flex flex-row-reverse'>
+                <span className='d-flex justify-content-end flex-end' style={{ width: '120px' }}>
+                    <FaRegStar className='d-inline-block m-2 text-color-primary' size={20} />  
+                    <FaDownload className='d-inline-block m-2 text-color-primary' size={20} /> 
+                </span>
+            </div>
         </div>
-       </div>
-    </div>
     )
 }
 

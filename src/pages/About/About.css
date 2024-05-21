@@ -17,44 +17,6 @@
     margin-top: 70px;
 }
 
-/*            cote defilement Debut             */
-
-/* @keyframes text-appear {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-span {
-    animation: text-appear 0.5s forwards;
-}
-
-@keyframes appear-disappear {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.repeating-animation {
-    animation: appear-disappear 5s infinite;
-    transition: opacity 2s;
-}*/
-
-/*            cote defilement Fin             */
-
 @media screen and (max-width: 950px) {
     .aboutDetailTitle>h1{
         font-size: 45px;

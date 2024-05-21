@@ -1,11 +1,14 @@
 #reflexion-section{
-    /* border: 1px solid; */
     background-image: linear-gradient(to top right, black, black),
     linear-gradient(90deg, white, #000, #000, white);
     background-clip: padding-box, border-box;
     background-origin: border-box;
     border: .2px solid transparent;
-    /* border-radius: 10px; */
+}
+
+.reflexion-section-image{
+    max-width: 30%;
+    max-height: 600px;
 }
 
 .reflexion-container{
@@ -42,5 +45,20 @@
     .reflexion-container{
         width: 400px;
         flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #reflexion-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reflexion-container{
+        width: auto;
+    }
+
+    .reflexion-section-image{
+        max-width: 70%;
     }
 }
