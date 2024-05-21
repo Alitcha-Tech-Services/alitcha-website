@@ -1,7 +1,8 @@
-import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './../../styles/features/CarrouselMembres.css'; 
+
+/* eslint-disable react/prop-types */
 
 const CarrouselMembres = ({ membres }) => {
   return (

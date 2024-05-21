@@ -33,7 +33,7 @@ export default function AtelierSection(){
     ]
     
     return (
-        <>
+        <div>
             <div id='atelier-section'>
                 <h3 className='my-5'>Ateliers</h3>
                 <div className='d-flex flex-wrap align-items-center w-100 m-auto'>
@@ -49,6 +49,6 @@ export default function AtelierSection(){
                 </div>
                 <PaginateIcons />
             </div>
-        </>
+        </div>
     )
 }

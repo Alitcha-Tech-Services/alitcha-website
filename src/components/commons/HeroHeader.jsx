@@ -1,4 +1,4 @@
-import 'D:/Projets Developpement/alitcha-website/src/styles/commons/HeroHeader.css';
+import './../../styles/commons/HeroHeader.css';
 
 export default function HeroHeader()
 {
