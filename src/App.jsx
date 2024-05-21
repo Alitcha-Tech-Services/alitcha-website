@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/features/Header';
-import Footer from './components/features/Footer';
+// import Header from './components/features/Header';
+// import Footer from './components/features/Footer';
 import './styles/global.css';
 import './styles/variable.css';
 import ProjectSession from './components/features/ProjectSection';
