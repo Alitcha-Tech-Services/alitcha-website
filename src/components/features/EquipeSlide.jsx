@@ -1,5 +1,3 @@
-//import React from 'react';
-
 import '../../styles/features/equipeSlide.css';
 
 import { v4 as uuidv4 } from "uuid";
@@ -10,7 +8,6 @@ import image1 from "./../../assets/notreequipeimage.png";
 import image2 from "./../../assets/Samuel.png";
 import image3 from "./../../assets/Samuel-.png";
 import image4 from "./../../assets/photoThierry1.png";
-//import image5 from "./../../assets/velo-nature.jpg";
 
 
 function EquipeSlide() {
@@ -48,7 +45,7 @@ function EquipeSlide() {
   ];
   return (
       <div className='mb-5'>
-          <h1 className='text-center mb-5 text-color-primary'>Notre Equipe</h1>
+          <h1 className='text-center mb-5 text-white'>Notre Equipe</h1>
           <div className="EquipeSlideBody">
               <div>
                   <CarouselEquipeSlide cards={cards} height="500px" width="100%" margin="0 auto" offset={200} showArrows={false} />

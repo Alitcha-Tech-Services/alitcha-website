@@ -1,17 +1,23 @@
 import './SolutionPage.css';
-import Header from '../../components/features/Header'
-import Footer from '../../components/features/Footer';
-import HeroHeader from '../../components/commons/HeroHeader';
 import Newsletter from '../../components/features/Newsletter';
 import RejoindreAlitchaSection from '../../components/commons/RejoindreAlitchaSection';
 import ProjectSection from '../../components/features/ResearchProject';
+import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
 
 export default function SolutionPage()
 {
+
+  const text = " dolor sit amet, consectetur adipiscing elit.";
+
+
     return(
         <div>
-          <Header />
-          <HeroHeader />
+          <div className='d-flex justify-content-between aboutDetailTitle'>
+                <h1 className="text-start mb-2 repeating-animation">
+                    Forem ipsum <TitleTypeWriter text={text} delay={100} infinite />
+                </h1>
+                <p className='text-end'>Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu! Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu </p>
+          </div>
           <p>Les solutions</p>
           <section className='SolutionSection'>
             <div className='DesignColumn'>
@@ -44,7 +50,6 @@ export default function SolutionPage()
           <ProjectSection />
           <RejoindreAlitchaSection />
           <Newsletter />
-          <Footer />
         </div>
     )
 }

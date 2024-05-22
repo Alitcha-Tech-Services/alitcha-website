@@ -4,64 +4,57 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import '../../styles/features/AdhesionForm.css'
-import React, { useRef } from 'react';
 
 
 export default function AdhesionForm() {
-  const fileInputRef = useRef(null);
-
-  const handleTextClick = () => {
-    fileInputRef.current.click();
-  };
 
     return(
         <section className='AdhesionFormComponent'>
-        <section className='AdhesionFormContainer'>
-    <Form className='AdhesionForm'>
-      <h5>Formulaire d'admission</h5>
-      <p>N B : En tant que stagiaire</p>
-      <Row className="mb-3">
-        <Form.Group as={Col} controlId="formGridName">
-          <Form.Control type="name" placeholder="Nom" />
-        </Form.Group>
-        <Form.Group as={Col} controlId="formGridEName">
-          <Form.Control type="name" placeholder="PreNom" />
-        </Form.Group>
-      </Row>
+            <section className='AdhesionFormContainer'>
+                <Form className='AdhesionForm'>
+                    <h5 className='text-center'>Formulaire d&apos;admission</h5>
+                    <p className='mb-5'>N B : En tant que stagiaire</p>
 
-      <Row className="mb-3">
-        <Form.Group as={Col} >
-          <Form.Control type="text" placeholder="Poste visé" />
-        </Form.Group>
-        <Form.Group as={Col} >
-          <Form.Control type="number" placeholder="Expérience" />
-        </Form.Group>
-      </Row>
-      <Row>
-        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-          <Form.Control as="textarea" rows={3} placeholder="Qu’est ce qui vous motive aà rejoindre Alitcha pour un stage ?" />
-        </Form.Group>
-      </Row>
-      <Row>
-      <Form.Group as={Col} >
-              <Form.Control type="text" placeholder="Cv" onClick={handleTextClick}/>
-              <input type="file" style={{ opacity: 0, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} ref={fileInputRef} />
-            </Form.Group>
-          </Row>
-          <Row>
-            <Form.Group as={Col} >
-              <Form.Control type="text" placeholder="Lettre de motivation" onClick={handleTextClick}/>
-              <input type="file" style={{ opacity: 0, position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1 }} ref={fileInputRef} />
-            </Form.Group>
-          </Row>
-      <div className='SubmitContainer'>
-        <Button variant="primary" type="submit" className='SubmitAdhesion'>
-        Envoyer
-      </Button>
-      </div>
+                    <Row className="mb-3 adhesionFormRow">
+                        <Form.Group as={Col} controlId="formGridName" className="mb-4">                            <Form.Control type="name" placeholder="Nom" />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formGridEName" className="">
+                            <Form.Control type="name" placeholder="Prenom" />
+                        </Form.Group>
+                    </Row>
+
+                    <Row className="mb-3 adhesionFormRow">
+                        <Form.Group as={Col} className="mb-4" >
+                            <Form.Control type="text" placeholder="Poste visé" />
+                        </Form.Group>
+                        <Form.Group as={Col} className="" >
+                            <Form.Control type="number" placeholder="Années d'Expérience" />
+                        </Form.Group>
+                    </Row>
+
+                    <Row>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" rows={4} placeholder="Qu’est ce qui vous motive à rejoindre Alitcha pour un stage ?" />
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group controlId="formFileLg" className="mb-3">
+                            <Form.Label className='text-start'>Votre lettre de motivation</Form.Label>
+                            <Form.Control type="file" size="lg" name='motivation' />
+                        </Form.Group>
+                    </Row>
+                    <Row>
+                        <Form.Group controlId="formFileLg" className="mb-3">
+                            <Form.Label className='text-start'>Votre CV</Form.Label>
+                            <Form.Control type="file" name='cv' size="lg" placeholder="Lettre de motivation" />
+                        </Form.Group>
+                    </Row>
+                    <div className='SubmitContainer'>
+                        <Button variant="primary" type="submit" className='SubmitAdhesion'>Envoyer</Button>
+                    </div>
       
-    </Form> 
-    </section>
-    </section>
-)
+                </Form> 
+            </section>
+        </section>
+    );
 }
