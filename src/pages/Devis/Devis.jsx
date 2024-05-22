@@ -1,6 +1,6 @@
 // import React from 'react';
 
-import AskDevis from "./../../components/features/AskDevis";
+import AskDevis from "../../components/features/AskDevis";
 
 function Devis() {
   return (
