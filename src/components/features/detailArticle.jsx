@@ -1,6 +1,6 @@
 import detailArticleImage1 from './../../assets/detailArticleImage1.jpeg';
 import detailArticleImage2 from './../../assets/detailArticleImage2.jpeg';
-import ArticleFunction from './../commons/ArticleFunction.jsx';
+import ArticleFunction from '../commons/ArticleFunction.jsx';
 
 
 function  DetailArticle(){

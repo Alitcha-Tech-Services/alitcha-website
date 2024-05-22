@@ -10,9 +10,8 @@ export default function SolutionPage()
 {
     return(
         <div>
-          <Header />
           <HeroHeader />
-          <p>Les solutions</p>
+          <p className='TitleSolution'>Les solutions</p>
           <section className='SolutionSection'>
             <div className='DesignColumn'>
               <p className='TitleDesign'>Design</p>
@@ -44,7 +43,6 @@ export default function SolutionPage()
           <ProjectSection />
           <RejoindreAlitchaSection />
           <Newsletter />
-          <Footer />
         </div>
     )
 }
