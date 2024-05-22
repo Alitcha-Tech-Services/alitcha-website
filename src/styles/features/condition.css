@@ -1,16 +1,50 @@
-
+.condition-section{
+    width: 80%;
+}
 .condition-container{
     background-image: url('../../assets/images/condition-image.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    /* height: 500px; */
+    height: auto;
 }
 
 .condition-next-container{
     background: linear-gradient(to right, #000,#000, transparent);
 }
 
+.condition-next-container1{
+    width: 30%;
+}
+
 .condition-next-container h5{
     border-bottom: 1px solid var(--color-primary);
     padding: 10px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .condition-section{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .condition-section{
+        width: 90%;
+    }
+
+    .condition-next-container1{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .condition-section{
+        width: 96%;
+    }
+
+    .condition-next-container1{
+        width: 100%;
+    }
 }

@@ -1,18 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/features/Header.jsx';
-import Footer from './components/features/Footer.jsx';
+import Header from './components/features/Header';
+import Footer from './components/features/Footer';
 import './styles/global.css';
 import './styles/variable.css';
 import Home from './pages/Home/Home.jsx';
-import SolutionPage from './pages/SolutionPage/SolutionPage';
+//import Solution from './pages/Solution/Solution';
 import About from './pages/About/About.jsx';
 import Blog from './pages/Blog/Blog';
 import Event from './pages/Events/Event';
 import Devis from './pages/Devis/Devis';
 import Intranet from './pages/Intranet/Intranet';
-import DetailArticle from './components/features/DetailArticle.jsx'
-import RejoindreAlitchaPage from './pages/RejoindreAlitchaPage/RejoindreAlitchaPage.jsx';
+import DetailArticle from './components/features/DetailArticle';
+import RejoindreAlitchaPage from './pages/RejoindreAlitchaPage/RejoindreAlitchaPage';
+import SolutionPage from './pages/SolutionPage/SolutionPage.jsx';
 
 const App = () => (
   <Router>
@@ -27,8 +28,8 @@ const App = () => (
       <Route path="/Events" element={<Event />} />
       <Route path="/Detail-Article" element={<DetailArticle />} />
       <Route path="/Devis" element={<Devis />} />
-      <Route path="/Intranet" element={<Intranet />} />
       <Route path="/joindre" element={<RejoindreAlitchaPage /> } />
+      <Route path="/Intranet" element={<Intranet />} />
       <Route path="*" element={<h2>Page not found</h2>} />
     </Routes>
     
