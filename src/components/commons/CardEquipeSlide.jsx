@@ -21,8 +21,8 @@ function CardEquipeSlide({ image, role, name }) {
                   <img src={image} alt={`${name} - ${role}`} className="img_image-container" />
               </div>
               <div className="info-container_card">
-                  <p className="text-center mb-3 mt-4">{name}</p>
-                  <p className="text-center team-role">{role}</p>
+                  <p className="text-center mb-3 mt-4 text-white">{name}</p>
+                  <p className="text-center team-role text-white">{role}</p>
               </div>
           </animated.div>
         </div>
