@@ -1,6 +1,6 @@
 // import React from 'react';
 
-import IntranetConnect from './../../components/features/IntranetConnect';
+import IntranetConnect from '../../components/features/IntranetConnect';
 
 function Intranet() {
   return (

@@ -1,46 +1,69 @@
-.AdhesionFormContainer{
-width: 1519px;
-height: 100%;
-/* background-color: red; */
-display: flex;
-justify-content: center;
-}
 .AdhesionFormComponent{
-    background-color: black;
     width: 100%;
-}
-.AdhesionForm
-{
-    width: 80%;
-    border: 1px solid orange;
-    color: white;
-    padding: 20px;
-}
-.AdhesionForm>p
-{
-    margin: 10px;
-}
-.AdhesionForm>h5{
-    /* color: white; */
-    text-align: center;
-    margin-bottom: 50px;
-}
-.SubmitAdhesion
-{
-    background-color: orange;
-    text-align: center;
     display: flex;
-    border: none;
-    /* position: relative; */
-    
+    flex-direction: row;
+    justify-content: center;
 }
-.SubmitContainer
-{
+
+.AdhesionFormContainer{
+    width: 80%;
+    height: auto;
     display: flex;
     justify-content: center;
 }
-.AdhesionForm>* 
-{
+
+
+.AdhesionForm{
+    border: 1px solid #ef7a207e;
+    color: white;
+    padding: 20px;
+}
+
+.AdhesionForm>p{
+    margin: 10px;
+}
+
+.AdhesionForm>h5{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.SubmitContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.SubmitAdhesion{
+    background-color: #EF7B20;
+    width: auto;
+    text-align: center;
+    border: none;
+}
+
+.SubmitAdhesion:hover{
+    background-color: black;
+    border:  1px solid #EF7B20;
+}
+
+.AdhesionForm>*{
     margin: 25px 0px;
 }
+
 /* ----------------------------- */
+
+@media screen and (max-width: 860px){
+    .AdhesionFormContainer{
+        width: 96%;
+    }
+
+    .AdhesionForm{
+        width: 96%;
+    }
+
+    .adhesionFormRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
