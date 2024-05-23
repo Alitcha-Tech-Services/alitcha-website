@@ -1,8 +1,8 @@
 import './SolutionPage.css';
 import Newsletter from '../../components/features/Newsletter';
-import RejoindreAlitchaSection from '../../components/commons/RejoindreAlitchaSection';
 import ProjectSection from '../../components/features/ResearchProject';
 import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
+import JoinAlitchaButton from '../../components/commons/JoinAlitchaButton';
 
 export default function SolutionPage()
 {
@@ -48,7 +48,9 @@ export default function SolutionPage()
 
           </section>
           <ProjectSection />
-          <RejoindreAlitchaSection />
+          <div>
+              <JoinAlitchaButton />
+          </div>
           <Newsletter />
         </div>
     )

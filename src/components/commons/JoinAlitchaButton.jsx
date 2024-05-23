@@ -9,7 +9,7 @@ function JoinAlitchaButton() {
                 <p className="text-center">Yorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div className="d-flex justify-content-center align-items-center">
-                <Button as={NavLink} to='/*' className="text-center w-auto join_alitcha_button" type='button' >Rejoindre Alitcha</Button>
+                <Button as={NavLink} to='/joindre' className="text-center w-auto join_alitcha_button" type='button' >Rejoindre Alitcha</Button>
             </div>
         </div>
     );
