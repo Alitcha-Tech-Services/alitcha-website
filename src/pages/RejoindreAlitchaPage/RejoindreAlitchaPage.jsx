@@ -1,5 +1,5 @@
 import './RejoindreAlitchaPage.css';
-import ConditionSection from '../../components/features/ConditionSection';
+import ConditionSection from '../../components/features/ConditionSection.jsx';
 import AdhesionForm from '../../components/features/AdhesionForm'
 import Newsletter from '../../components/features/Newsletter';
 import TitleTypeWriter from "./../../components/features/TitleTypeWriter";

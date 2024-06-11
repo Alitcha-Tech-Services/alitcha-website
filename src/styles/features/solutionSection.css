@@ -1,0 +1,55 @@
+.SolutionSectionContainer{
+    width: 80%;
+}
+
+.SolutionSectionSearch>form{
+    width: 90%
+}
+
+.SolutionSectionSearch>form>button{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.SolutionCompContainer{
+    max-width: 255px;
+    max-height: 350px;
+}
+
+.SolutionCompFirstContent>img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.SolutionCompContainer:hover{
+    max-width: 290px;
+    height: 400px;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+.SolutionCompFirstContent>img:hover{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    transition: 0.5s;
+}
+
+
+/* /     ********       /media queries  **********  */
+
+@media screen and (max-width: 800px) {
+    .SolutionSectionContainer{
+        width: 90%;
+    }
+    
+    .SolutionSectionSearch>form{
+        width: 100%
+    }
+    
+    .SolutionSectionSearch>form>button{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

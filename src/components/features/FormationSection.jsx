@@ -24,7 +24,7 @@ export default function FormationSection() {
     ]
 
     return (
-        <>
+        <div>
             <div className='mt-5 w-75 text-justify m-auto p-3 align-item-center justify-content-center'>
                 <h3>Formations</h3>
                 <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, necessitatibus ullam! Distinctio quibusdam asperiores ad perferendis expedita ratione facilis voluptatum, dignissimos consequatur aut vitae rerum porro aperiam, dicta eum velit.</p>
@@ -42,6 +42,6 @@ export default function FormationSection() {
                     <PaginateIcons />
                 </div>
             </div>
-        </>
+        </div>
     )
 }

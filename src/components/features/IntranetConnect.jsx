@@ -25,10 +25,8 @@ const IntranetConnect = () => {
                                     <ErrorMessage name="username" component="div" className="text-danger text-start" />
                                 </inputLabel>
 
-                                <p style={{ height: '40px' }}></p>
-
                                 <inputLabel id="floatingEmail" label="Adresse Email" >
-                                    <Field name="email" type="email" placeholder="name@example.com" className="form-control" style={{height: '50px'}}/>
+                                    <Field name="email" type="email" placeholder="name@example.com" className="form-control mt-5" style={{height: '50px'}}/>
                                     <ErrorMessage name="email" component="div" className="text-danger text-start" />
                                 </inputLabel>
 
