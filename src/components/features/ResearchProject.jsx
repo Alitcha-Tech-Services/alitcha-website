@@ -4,7 +4,7 @@ import PaginateIcons from '../commons/PaginateIcons'
 export default function ResearchProject(){
 
     return (
-        <>
+        <div>
             <div id="research-project-section" className="d-flex flex-column m-auto my-5">
                 <h5 className="my-3">
                     Les Projets de Recherche
@@ -18,6 +18,6 @@ export default function ResearchProject(){
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

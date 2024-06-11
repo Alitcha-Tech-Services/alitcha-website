@@ -32,10 +32,10 @@ function Footer() {
         <Row>
           <Col>
             <div className="socialIcons">
-            <a href="#"><FaFacebook /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaGlobe /></a>
+            <a href="https://www.facebook.com/Alitcha-106586631967294"><FaFacebook /></a>
+            <a href="https://www.instagram.com/ali.tcha/"><FaInstagram /></a>
+            <a href="https://twitter.com/Alitcha5?t=RlRUgTunK2yOglcP7WbmgQ&s=09!"><FaTwitter /></a>
+            <a href="https://www.alitchateam.com/"><FaGlobe /></a>
             </div>
           </Col>
         </Row>

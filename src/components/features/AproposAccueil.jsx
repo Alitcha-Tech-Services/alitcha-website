@@ -17,7 +17,7 @@ function AproposAccueil() {
       <div>
           <div className="d-flex flex-row justify-content-center">
       <div className="mt-5 mb-5" style={{ width: '70%' }}>
-          <h3 className="text-start mb-4">{apropos[0]}</h3>
+          <h3 className="text-start mb-4 text-color-primary">{apropos[0]}</h3>
           <p className="text-justify">{apropos[1]}</p>
           <p className="text-justify">{apropos[2]}</p>
       </div>

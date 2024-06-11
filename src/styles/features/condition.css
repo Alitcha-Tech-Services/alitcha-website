@@ -1,11 +1,11 @@
 .condition-section{
     width: 80%;
 }
-.condition-container{
+
+/*.condition-container{
     background-image: url('../../assets/images/condition-image.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 500px; */
     height: auto;
 }
 
@@ -47,4 +47,20 @@
     .condition-next-container1{
         width: 100%;
     }
+} */
+
+
+/*.button-hover.active {
+    background-color: #f0a500;
+    border-color: #f0a500;
 }
+.button-hover {
+    background-color: #333;
+    border-color: #333;
+}
+.condition-section {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}*/
