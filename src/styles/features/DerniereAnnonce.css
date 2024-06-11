@@ -1,0 +1,67 @@
+.SectionDerniereAnnonce
+{
+    height: 582px;
+    width: 1330px;
+    display: flex;
+    /* border: solid; */
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    margin: auto;
+}
+.BlocDerniereAnnonce
+{    
+    margin-top: 30px;
+    height: 494px;
+    width: 1330px;
+    display: flex;
+    border-radius: 10px;
+}
+.TitreBlocAnnonce
+{
+    font-weight: 600;
+    font-size: 24px;
+    color: #EF7B20;
+    
+}
+.DivImgDerniereAnnonce
+{
+    width: 822.85px;
+    height: 494px;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+.ImgDerniereAnnonce
+{
+    border-radius: inherit;
+}
+.CorpsDerniereAnnonce
+{
+    color: black;
+    width: 508px;
+    height: 494px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    padding: auto;
+    padding: 100px 62px ;
+}
+.EnteteDerniereAnnonce
+{
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+}
+.ParagrapheDerniereAnnonce
+{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: justify;
+}
+.DateDerniereAnnonce
+{
+    font-size: 20px;
+    font-weight: 500px;
+    text-align: left;
+}

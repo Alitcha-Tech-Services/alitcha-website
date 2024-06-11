@@ -45,7 +45,7 @@ export default function AtelierSection(){
                         })
                     }
                     
-                    
+                
                 </div>
                 <PaginateIcons />
             </div>

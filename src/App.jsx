@@ -14,11 +14,15 @@ import Intranet from './pages/Intranet/Intranet';
 import DetailArticle from './components/features/DetailArticle';
 import RejoindreAlitchaPage from './pages/RejoindreAlitchaPage/RejoindreAlitchaPage';
 import SolutionPage from './pages/SolutionPage/SolutionPage.jsx';
+import AlaUneSection from './components/features/AlaUneSection.jsx'
+import EventSection from './components/features/EventSection.jsx'
+import EventPresentation from './components/features/EventPresentation.jsx';
 
 const App = () => (
   <Router>
     <Header />
-
+    {/* <AlaUneSection />
+    <EventSection /> */}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Home" element={<Home />} />
@@ -30,6 +34,7 @@ const App = () => (
       <Route path="/Devis" element={<Devis />} />
       <Route path="/joindre" element={<RejoindreAlitchaPage /> } />
       <Route path="/Intranet" element={<Intranet />} />
+      <Route path="/EventPresentation/:id" element={<EventPresentation />} />
       <Route path="*" element={<h2>Page not found</h2>} />
     </Routes>
     

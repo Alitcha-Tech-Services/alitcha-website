@@ -1,0 +1,57 @@
+.BlocArticleItem
+{
+    display: flex;
+    flex-direction: column;
+    width: 642px;
+    height: 747px;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.BlocImgArticle
+{
+    height: 479px;
+    width: 642px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.ImgArticle
+{
+    height: 479px;
+    width: auto;
+    /* transform: rotate(-90deg); */
+    margin-bottom: -61px;
+    border-radius: inherit;
+
+}
+
+.DivCorpsArticle
+{
+    height: 272px;
+    width: 642px;
+    background-color: white;
+    padding: 25px 80px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.TypeArticle
+{
+    font-weight: 300;
+    font-size: 15px;
+    text-align: left;
+}
+.DescArticle{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.DateArticle
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+}

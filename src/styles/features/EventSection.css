@@ -1,0 +1,151 @@
+.VoirPlusLine2
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 45px;
+}
+.EventPresentationImg
+{
+    width: 736px;
+    height: 736px;
+    border-radius: 10px;
+}
+.EventPresentationBox
+{
+    width: 736px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    text-align: justify;
+}
+
+/* ____________________________ */
+.TitleEvent
+{
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #EF7B20;
+    text-align: left;
+    margin-top: 30px;
+}
+.EventDateRow
+{
+    display: flex;
+    justify-content: space-between;
+}
+.EventDate 
+{
+    display: flex;
+    /* border: solid; */
+    /* justify-content: space-evenly; */
+    text-align: left;
+    height: 40px;
+}
+.EventDate>:first-child
+{
+    color: #EF7B20;
+    width: 34px;
+    font-size: 34px;
+    /* margin-left: -5px; */
+    /* margin: -15px 10px 0px -5px; */
+}
+.EventDate>p
+{
+    /* line-height: 22.5px; */
+    font-size: 15px;
+    margin-top: 5px;
+}
+.EventPlaceRow2
+{
+    display: flex;
+    justify-content: left;
+    /* width: 197.5px; */
+    /* border: solid; */
+}
+.EventPlaceRow2>:first-child
+{
+    color: #EF7B20;
+    width: 34px;
+    font-size: 34px;
+    margin-left: -5px;
+    margin: -15px 10px 0px -5px;
+}
+.EventPlaceRow2>p
+{
+    font-size: 15px;
+    margin-top: 5px;
+    /* margin-left: -75px; */
+}
+.EventParticipants2
+{
+    display: flex;
+    justify-content: left;
+    /* border: solid; */
+    margin-left: -200px;
+}
+.EventParticipants2>img
+{
+    width: 24px;
+    height: 26px;
+    border-radius: 100px;
+    margin-left: -5px;
+}
+.Participants 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.DescriptionParagraph
+{
+    font-size: 15px;
+    padding: 45px 0px;
+}
+.LirePlus
+{
+    color: #EF7B20;
+    cursor: pointer;
+}
+.EventMapRow2
+{
+    display: flex;
+    justify-content: left;
+}
+.EventMapRow2>:first-child
+{
+    color: #EF7B20;
+    width: 34px;
+    font-size: 34px;
+    margin-left: -5px;
+    margin: -15px 10px 0px -5px;
+}
+
+.EventMapRow2>p
+{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.BoutonSinscrire
+{
+    background-color: #EF7B20;
+    color: white;
+    width: 199px;
+    height: 54px;
+    border-radius: 50px;
+    padding: 17px, 55px, 17px, 55px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 40px;
+    padding: auto;
+}
+.divBtnSinscrire
+{
+    display: flex;
+    justify-content: center;
+}
