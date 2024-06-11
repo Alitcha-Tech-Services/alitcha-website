@@ -1,11 +1,13 @@
 import './Event.css';
-import ConferenceSection from '../../components/features/ConferenceSection';
-import AtelierSection from '../../components/features/AtelierSecion';
-import ProgrammeSection from '../../components/features/ProgrammeSection';
-import FormationSection from '../../components/features/FormationSection';
+// import ConferenceSection from '../../components/features/ConferenceSection';
+// import AtelierSection from '../../components/features/AtelierSecion';
+// import ProgrammeSection from '../../components/features/ProgrammeSection';
+// import FormationSection from '../../components/features/FormationSection';
 import Newsletter from '../../components/features/Newsletter';
 import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
 import JoinAlitchaButton from '../../components/commons/JoinAlitchaButton';
+import AlaUneSection from '../../components/features/AlaUneSection';
+import EventSection from '../../components/features/EventSection';
 
 export default function Event()
 {
@@ -20,16 +22,16 @@ export default function Event()
                 <p className='text-end'>Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu! Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu </p>
             </div>
             <div className='mt-4 mb-4 pt-3'>
-                <ConferenceSection />
+                <AlaUneSection />
             </div>
             <div className='mt-4 mb-4 pt-3'>
-                <AtelierSection />
+               Composant filtre... 
             </div>
             <div className='mt-4 mb-4 pt-3'>
-                <ProgrammeSection />
+                <EventSection />
             </div>
             <div className='mt-4 mb-4 pt-3'>
-                <FormationSection />
+                
             </div>
             <div>
                 <JoinAlitchaButton />

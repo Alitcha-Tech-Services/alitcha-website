@@ -1,0 +1,48 @@
+.EventSection
+{
+    display: flex;
+    justify-content: space-around;
+}
+.SearchBar
+{
+    width: 600px;
+    background-color: rgb(46, 43, 43);
+    border: black;
+    color: white;
+    
+}
+.SearchBar::placeholder
+{
+    color: white;
+}
+.SearchLine
+{
+    justify-content: center;
+    margin: 50px 0px;
+}
+.VoirPlusLine
+{
+    width: 100%;
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+}
+.VoirPlusLine>p
+{
+    /* border: solid; */
+    /* text-align: ; */
+    width: 120px;
+}
+.VoirPlusButton
+{
+    width: 150px;
+    color: #EF7B20;
+    display: flex;
+    cursor: pointer;
+
+}
+.FlecheNext
+{
+    margin-top: 5px;
+    margin-left: -10px;
+}

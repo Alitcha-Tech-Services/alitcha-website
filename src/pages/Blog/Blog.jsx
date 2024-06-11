@@ -2,10 +2,12 @@
 
 import Newsletter from "./../../components/features/Newsletter";
 import JoinAlitchaButton from './../../components/commons/JoinAlitchaButton';
-
+import DerniereAnnonce from "../../components/features/DerniereAnnonce";
 import ReflexionSection from "../../components/features/ReflexionSection";
 import ArticlesComponent from "../../components/features/ArticlesComponent";
 import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
+import ArticleItem from "../../components/features/ArticleItem";
+import ArticleEnAvant from "../../components/features/ArticlesEnAvant";
 
 function Blog() {
 
@@ -21,15 +23,16 @@ function Blog() {
             </div>
             
             <div>
-                <ArticlesComponent />
+                <DerniereAnnonce />
             </div>
             <div className="mt-5">
-                <h1 className="text-center text-white mb-5">Reflexions</h1>
-                <ReflexionSection />
+                Composant filtre...
             </div>
-
             <div>
-                <JoinAlitchaButton />
+                <ArticleEnAvant />
+            </div>
+            <div>
+                
             </div>
             <div>
                 <Newsletter />
