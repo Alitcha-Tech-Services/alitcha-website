@@ -39,4 +39,8 @@ body {
     background-color: transparent !important;
 }
 
+.aActivity{
+    background-color: var(--color-primary) !important;
+    color: var(--color-white) !important;
+}
 

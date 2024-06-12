@@ -36,7 +36,7 @@ const IntranetConnect = () => {
                                 </FloatingLabel>
 
                                 <div className="d-flex justify-content-center align-items-center">
-                                    <Button className="text-center intranet_button" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
+                                    <Button className="text-center intranet_button button-hover" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
                                 </div>
                             </Form>
                         )}
