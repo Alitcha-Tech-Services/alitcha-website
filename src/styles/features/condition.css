@@ -1,66 +1,38 @@
-.condition-section{
-    width: 80%;
+.condition-section-content{
+    width: 88%;
 }
 
-/*.condition-container{
+.condition-container{
     background-image: url('../../assets/images/condition-image.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
 }
-
-.condition-next-container{
-    background: linear-gradient(to right, #000,#000, transparent);
-}
-
-.condition-next-container1{
-    width: 30%;
-}
-
-.condition-next-container h5{
-    border-bottom: 1px solid var(--color-primary);
-    padding: 10px;
+.condition-container>div{
+    background-color: rgba(0, 0, 0, 0.88);
+    padding: 50px;
 }
 
 
-@media screen and (max-width: 1100px) {
-    .condition-section{
-        width: 85%;
-    }
-}
 
-@media screen and (max-width: 940px) {
-    .condition-section{
-        width: 90%;
-    }
-
-    .condition-next-container1{
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 740px) {
-    .condition-section{
-        width: 96%;
-    }
-
-    .condition-next-container1{
+@media screen and (max-width: 690px) {
+    .condition-section-content{
         width: 100%;
     }
-} */
-
-
-/*.button-hover.active {
-    background-color: #f0a500;
-    border-color: #f0a500;
+    .condition-section-content-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .condition-section-content-buttons>h6{
+        margin-bottom: 25px;
+    }
+    .collapseOther1-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .collapseOther1-1>h6{
+        margin-bottom: 25px;
+    }
 }
-.button-hover {
-    background-color: #333;
-    border-color: #333;
-}
-.condition-section {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-}*/

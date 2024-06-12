@@ -1,0 +1,26 @@
+.SolutionDetailComponentClass{
+    width: 350px;
+    height: auto;
+    position: relative;
+}
+
+.home-solutions-more-first-content-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.home-solutions-more-last-content-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:350px) {
+    .SolutionDetailComponentClass{
+        width: 260px;
+    }
+}

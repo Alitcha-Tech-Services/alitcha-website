@@ -35,7 +35,7 @@ const AskDevis = () => {
                                 </FloatingLabel>
 
                                 <div className="d-flex justify-content-center align-items-center">
-                                    <Button className="text-center intranet_button mb-3" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
+                                    <Button className="text-center intranet_button mb-3 button-hover" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
                                 </div>
                             </Form>
                         )}

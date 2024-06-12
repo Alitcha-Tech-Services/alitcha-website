@@ -66,7 +66,7 @@ function SolutionSection() {
     return (
         <div id='SolutionSection' className="d-flex flex-row justify-content-center">
             <div className="SolutionSectionContainer">
-                <h3 className='text-center mb-5'>Les solutions</h3>
+                <h3 className='text-center mb-5 text-color-primary'>Les solutions</h3>
                 <div className="d-flex flex-row justify-content-center mb-5">
                     <div className="SolutionSectionSearch d-flex flex-row justify-content-center">
                         <form className="d-flex" role="search" onSubmit={handleGoClick}>
