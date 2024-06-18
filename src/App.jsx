@@ -16,7 +16,7 @@ import RejoindreAlitchaPage from './pages/RejoindreAlitchaPage/RejoindreAlitchaP
 import SolutionPage from './pages/SolutionPage/SolutionPage.jsx';
 
 import CatResearchProject from './components/features/CatResearchProject.jsx';
-import FilterComponents from './components/features/FilterComponents.jsx';
+//import FilterComponents from './components/features/FilterComponents.jsx';
 import HomeSolutionsMore from './pages/HomeSolutions/HomeSolutionMore.jsx';
 
 const App = () => (
