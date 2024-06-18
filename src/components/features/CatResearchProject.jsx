@@ -5,7 +5,7 @@ import cat_research_project from '../../assets/CatResearchProject.jpeg';
 
 function CatResearchProject() {
     return (
-        <div className="d-flex flex-row justify-content-center">
+        <div className="d-flex flex-row justify-content-center w-auto my-5">
             <div className="w-auto">
                 <div className="d-flex justify-content-center">
                     <div className="background-primary d-flex flex-row justify-content-evenly" style={{ 'max-width': '450px', 'max-height': '85px', 'min-width': '250px', 'min-height': '75px', 'z-index': '100', 'margin-bottom': '-37px', 'border-radius': '8px' }}>

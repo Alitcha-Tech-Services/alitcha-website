@@ -45,37 +45,47 @@ function FilterComponents() {
 
     return (
         <div>
-            <div className='mt-5'>
+            <div id='' className='mt-5'>
                 <div>
-                    <div className='d-flex'>
-                        
-                        {
-                          data[0].content.map((content, index) => (
-                            <h6 key={index} className="accordion-header">
-                                <button type="button" className={`collapsed border-border-primary text-white ${activeButton === content ? 'background-primary' : 'button-hover bg-transparent'} w-auto`} style={{ "border-radius": '25px' }} data-bs-toggle="collapse" data-bs-target={`#collapse${index + 1}`} aria-expanded={activeButton === content} aria-controls={`collapse${index + 1}`} onClick={() => setActiveButton(content)} >
-                                    {content}
-                                </button>
-                            </h6>
-                          ))
-                        }
-                    </div>
                     <div>
-                        <h6 className="accordion-header d-flex flex-start mx-5 px-5 my-5">
-                            <Button onClick={() => handleShow(true)} className="collapsed border border-0 button-hover w-auto bg-transparent d-flex" style={{ "border-radius": '25px', }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
-                                <MdOutlineFilterList className="text-color-primary text-start" style={{ fontSize: '40px' }} /> <span className="mt-2 mx-3 text-color-primary">Filtre</span>
-                            </Button>
-                        </h6>
+                        <div className='d-flex'>
+                            
+                            {
+                            data[0].content.map((content, index) => (
+                                <h6 key={index} className="accordion-header">
+                                    <button type="button" className={`collapsed border-border-primary text-white ${activeButton === content ? 'background-primary' : 'button-hover bg-transparent'} w-auto`} style={{ "border-radius": '25px' }} data-bs-toggle="collapse" data-bs-target={`#collapse${index + 1}`} aria-expanded={activeButton === content} aria-controls={`collapse${index + 1}`} onClick={() => setActiveButton(content)} >
+                                        {content}
+                                    </button>
+                                </h6>
+                            ))
+                            }
+                        </div>
+                        <div>
+                            <h6 className="accordion-header d-flex flex-start mx-5 px-5 my-5">
+                                <Button onClick={() => handleShow(true)} className="collapsed border border-0 button-hover w-auto bg-transparent d-flex" style={{ "border-radius": '25px', }} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                                    <MdOutlineFilterList className="text-color-primary text-start" style={{ fontSize: '40px' }} /> <span className="mt-2 mx-3 text-color-primary">Filtre</span>
+                                </Button>
+                            </h6>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className=''>
-                <div className='d-flex flex-row justify-content-evenly flex-wrap'>
-                    <CatResearchProject />
-                    <CatResearchProject />
-                    <CatResearchProject />
-                    <CatResearchProject />
-                </div>
+                {
+                    data[0].content.map((content, index) => (
+                        <div key='index' className="accordion-item bg-transparent border border-0">
+                            <div id={`collapse${index + 1}`} className="accordion-collapse" data-bs-parent="#accordionFilter">
+                                <div className="accordion-body text-white d-flex flex-row justify-content-center">
+                                    <div className="filter-solution-content">
+                                        <CatResearchProject />
+                                        <CatResearchProject />
+                                        <CatResearchProject />
+                                        <CatResearchProject />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
 
             <Modal className='' show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>

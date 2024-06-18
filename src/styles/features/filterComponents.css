@@ -4,3 +4,10 @@
     opacity: 1;
     font-size: 25px;
 }
+
+.filter-solution-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
