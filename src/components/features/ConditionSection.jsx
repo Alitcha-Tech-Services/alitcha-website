@@ -20,9 +20,9 @@ export default function ConditionSection () {
         'Item #6 ppp p',
     ];
 
-    // const handleClick = (btn) => {
+    /*// const handleClick = (btn) => {
     //     setActiveButton(btn);
-    // };
+    // };*/
 
 
     return (
