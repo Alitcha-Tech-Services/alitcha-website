@@ -24,8 +24,8 @@ const Header = () => (
 
             <Navbar.Collapse className='_intranet_devis_'>
                 <Nav className="ml-auto d-flex justify-content-between header_button_">
-                    <Button as={NavLink}  to="/Devis" className='header_button header_button_first'>Demander un devis</Button>
-                    <Button as={NavLink}  to="/Intranet" className='header_button header_button_second'>Connexion intranet</Button>
+                    <Button as={NavLink}  to="/Devis" className='header_button header_button_first button-hover'>Demander un devis</Button>
+                    <Button as={NavLink}  to="/Intranet" className='header_button header_button_second button-hover'>Connexion intranet</Button>
                 </Nav>
             </Navbar.Collapse>
         </Container>

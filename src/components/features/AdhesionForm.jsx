@@ -101,7 +101,7 @@ export default function AdhesionForm() {
             <section className='AdhesionFormContainer'>
                 <Form className='AdhesionForm' onSubmit={formik.handleSubmit}>
                     <h5 className='text-center'>Formulaire d&apos;admission</h5>
-                    <p className='mb-5'>N B : En tant que stagiaire</p>
+                    <p className='mb-5 text-start'>N B : En tant que stagiaire</p>
 
                     <Row className="mb-3 adhesionFormRow">
                         <Form.Group as={Col} controlId="formGridName" className="mb-4">
@@ -144,7 +144,7 @@ export default function AdhesionForm() {
 
                     <Row>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                            <Form.Control as="textarea" rows={4} placeholder="Qu’est ce qui vous motive à rejoindre Alitcha pour un stage ?" {...formik.getFieldProps('motivation')} />
+                            <Form.Control as="textarea" rows={4} placeholder="Parlez nous un peu de vos expériences professionnelles et personnelles" {...formik.getFieldProps('motivation')} />
                             {
                                 formik.touched.motivation && formik.errors.motivation ? (
                                     <div className="text-danger text-start">{formik.errors.motivation}</div>
@@ -175,7 +175,7 @@ export default function AdhesionForm() {
                         </Form.Group>
                     </Row>
                     <div className='SubmitContainer'>
-                        <Button variant="primary" type="submit" className='SubmitAdhesion'>Envoyer</Button>
+                        <Button variant="primary" type="submit" className='SubmitAdhesion px-5'>Envoyer</Button>
                     </div>
                 </Form>
             </section>

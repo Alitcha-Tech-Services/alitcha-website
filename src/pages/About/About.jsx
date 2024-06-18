@@ -3,8 +3,10 @@ import OurHistory from "./../../components/features/OurHistory";
 import JoinAlitchaButton from './../../components/commons/JoinAlitchaButton';
 import './About.css';
 import EquipeSlide from "./../../components/features/EquipeSlide";
-import OurVisionCard from "./../../components/features/OurVisionCard";
+//import OurVisionCard from "./../../components/features/OurVisionCard";
 import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
+import OurFonctionment from "../../components/features/OurFonctionment";
+
 
 
 function About(){
@@ -24,8 +26,14 @@ function About(){
                     <OurHistory />
                 </div>
                 <div>
-                    <OurVisionCard />
+                    <h3 className="text-center text-color-primary mb-5">Comment On Fonctionne</h3>
+                    <div>
+                        <OurFonctionment />
+                    </div>
                 </div>
+                {/* <div>
+                    <OurVisionCard />
+                </div> */}
                 <div>
                     <EquipeSlide />
                 </div>

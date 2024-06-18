@@ -1,0 +1,6 @@
+.btn-close{    
+    color: var(--color-primary) !important;
+    background-color: var(--color-primary) !important;
+    opacity: 1;
+    font-size: 25px;
+}

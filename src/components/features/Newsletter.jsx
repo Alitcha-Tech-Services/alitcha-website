@@ -27,7 +27,7 @@ export default function Newsletter() {
     };
 
     return (
-        <>
+        <div>
             <div id="newsletter" className="p-5 my-5 border-radius">
                 <h3>Morem ipsum dolor sit amet</h3>
                 <div className='my-5'>
@@ -57,6 +57,6 @@ export default function Newsletter() {
                     </Form>
                 </Formik>
             </div>
-        </>
+        </div>
     )
 }

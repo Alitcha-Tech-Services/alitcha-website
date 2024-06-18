@@ -30,28 +30,28 @@ body{
 
 .join_alitcha_button{
     color: #EF7B20;
-    border: 1px solid #EF7B20;
+    border: 1px solid var(--color-primary);
     border-radius: 8px;
     background-color: black;
 }
 
 .join_alitcha_button:hover{
     color: white;
-    border: 1px solid #EF7B20;
+    border: 1px solid var(--color-primary);
     border-radius: 20px;
     background-color: black;
 }
 
 .intranet_button{
-    color: #EF7B20;
-    border: 1px solid #EF7B20;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
     background-color: black;
     width: auto;
 }
 
 .intranet_button:hover{
-    background-color: #EF7B20;
-    border: 1px solid #EF7B20;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 @media screen and (max-width: 767px) {

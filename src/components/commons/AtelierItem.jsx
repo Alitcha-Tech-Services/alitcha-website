@@ -11,7 +11,7 @@ export default function AtelierItem({image, title, like, action}){
                 </div>
                 <div>
                     <span>{title}</span>
-                    <span>{like} <FaHeart size={18} className='text-color-primary' style={{cursor: 'pointer'}} onClick={() => action()}/></span>
+                    <span>{like} <FaHeart size={18} className='text-color-primary' style={{cursor: 'pointer'}} onClick={() => action()}/> </span>
                 </div>
             </div>
         </>

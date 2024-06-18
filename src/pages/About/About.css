@@ -1,6 +1,6 @@
 .aboutDetailTitle{
     margin-top: 100px;
-    margin-bottom: 70px;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: row;
     width: 76%;
@@ -40,3 +40,177 @@
 }
 
 /*/ / / //  / / / / / / / / /  / / / / / / / / / / / / / / / /  / /  /*/
+
+.repeating-animation{
+    height: 200px;
+}
+
+.our-mission-objectif{
+    width: 65%;
+}
+
+/*/                  SeeMoreAbout                /*/
+
+.our-mission-objectif>div>span{
+    width: 8%;
+}
+.our-mission-objectif>div>p{
+    width: 89%;
+}
+
+.SeeMoreAbout1{
+    width: 70%;
+}
+
+.SeeMoreAbout1-1{
+    width: 150%;
+}
+
+@media screen and (max-width: 1200px) {
+    .SeeMoreAbout1{
+        width: 80%;
+    }
+
+    .our-mission-objectif{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .SeeMoreAbout1{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .SeeMoreAbout1-2{
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .our-mission-objectif{
+        width: 90%;
+    }
+    .SeeMoreAbout1{
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .SeeMoreAbout1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .SeeMoreAbout1-1{
+        width: 94%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .our-mission-objectif{
+        width: 96%;
+    }
+}
+
+/*/              HistoryDetailComponent            /*/
+
+.HistoryDetailComponent{
+    width: 70%;
+    margin-bottom: 90px;
+}
+.HistoryDetailComponent1-1{
+    position: relative;
+    width: 85%;
+}
+
+.HistoryDetailComponent1-2{
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .HistoryDetailComponent{
+        width: 80%;
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .HistoryDetailComponent{
+        width: 88%;
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .HistoryDetailComponent{
+        width: 92%;
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .HistoryDetailComponent1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .HistoryDetailComponent1-1{
+        width: 100%;
+    }
+
+    .HistoryDetailComponent1-2{
+        margin-left: 1px;
+    }
+}
+
+/*/               EquipeImage             /*/
+
+.EquipeImage{
+    width: 75%;
+}
+
+@media screen and (max-width: 880px) {
+    .EquipeImage{
+        width: 90%;
+    }
+}
+
+
+.about-ridth-transition {
+    animation: slide-i 2.5s;
+}
+
+@keyframes slide-i {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.about-left-transition {
+    animation: slide-o 2.5s;
+}
+
+@keyframes slide-o {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.about-rid-transition {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 3s, opacity 3s;
+}
+
+.about-rid-transition.slide-on {
+    opacity: 1;
+    transform: translateX(0);
+}

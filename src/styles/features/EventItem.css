@@ -1,0 +1,90 @@
+.EventItemDiv
+{
+    width: 448px;
+    height: 588px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 28px;
+    color: black;
+}
+.DivImgEvent
+{
+    width: 400px;
+    height: 400px;
+}
+.ImgEvent 
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.TitleEvent
+{
+    line-height: 36px;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    text-align: left;
+}
+.EventDateRow
+{
+    display: flex;
+    justify-content: space-between;
+}
+.EventDate 
+{
+    display: flex;
+    /* border: solid; */
+    /* justify-content: space-evenly; */
+    text-align: left;
+    height: 40px;
+}
+.EventDate>:first-child
+{
+    color: #EF7B20;
+    width: 34px;
+    font-size: 34px;
+    margin-left: -5px;
+    margin: -15px 10px 0px -5px;
+}
+.EventDate>p
+{
+    /* line-height: 22.5px; */
+    font-size: 15px;
+    margin-top: 5px;
+}
+.EventPlaceRow
+{
+    display: flex;
+    justify-content: left;
+    width: 197.5px;
+    /* border: solid; */
+}
+.EventPlaceRow>:first-child
+{
+    color: #EF7B20;
+    width: 34px;
+    font-size: 34px;
+    margin-left: -5px;
+    margin: -15px 10px 0px -5px;
+}
+.EventPlaceRow>p
+{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: -75px;
+}
+.EventParticipants
+{
+    display: flex;
+    justify-content: right;
+    /* border: solid; */
+    padding-right: 30px;
+}
+.EventParticipants>img
+{
+    width: 24px;
+    height: 26px;
+    border-radius: 100px;
+    margin-left: -5px;
+}

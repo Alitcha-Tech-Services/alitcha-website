@@ -25,10 +25,8 @@ const IntranetConnect = () => {
                                     <ErrorMessage name="username" component="div" className="text-danger text-start" />
                                 </inputLabel>
 
-                                <p style={{ height: '40px' }}></p>
-
                                 <inputLabel id="floatingEmail" label="Adresse Email" >
-                                    <Field name="email" type="email" placeholder="name@example.com" className="form-control" style={{height: '50px'}}/>
+                                    <Field name="email" type="email" placeholder="name@example.com" className="form-control mt-5" style={{height: '50px'}}/>
                                     <ErrorMessage name="email" component="div" className="text-danger text-start" />
                                 </inputLabel>
 
@@ -38,7 +36,7 @@ const IntranetConnect = () => {
                                 </FloatingLabel>
 
                                 <div className="d-flex justify-content-center align-items-center">
-                                    <Button className="text-center intranet_button" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
+                                    <Button className="text-center intranet_button button-hover" type="submit" disabled={isSubmitting}>Envoyez la demande</Button>
                                 </div>
                             </Form>
                         )}

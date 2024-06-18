@@ -3,6 +3,7 @@ import Newsletter from '../../components/features/Newsletter';
 import ProjectSection from '../../components/features/ResearchProject';
 import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
 import JoinAlitchaButton from '../../components/commons/JoinAlitchaButton';
+import FilterComponents from '../../components/features/FilterComponents';
 
 export default function SolutionPage()
 {
@@ -18,7 +19,8 @@ export default function SolutionPage()
                 </h1>
                 <p className='text-end'>Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu! Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu </p>
           </div>
-           <p className='TitleSolution'>Les solutions</p>
+
+          {/* <p className='TitleSolution'>Les solutions</p>
           <section className='SolutionSection'>
             <div className='DesignColumn'>
               <p className='TitleDesign'>Design</p>
@@ -45,9 +47,15 @@ export default function SolutionPage()
                 </div>
               </div>
             </div>
+          </section> */}
 
-          </section>
-          <ProjectSection />
+          <div>
+              <FilterComponents />
+          </div>
+
+          <div>
+              <ProjectSection />
+          </div>
           <div>
               <JoinAlitchaButton />
           </div>
