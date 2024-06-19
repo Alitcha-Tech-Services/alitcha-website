@@ -11,3 +11,28 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+.filter-components-accordion-header{
+    width: 100%;
+    height: 100%;
+    background-color: black !important;
+    color: var(--color-primary) !important;
+    border: 2px solid var(--color-primary);
+}
+
+
+.custom-accordion-header {
+    background-color: black;
+    color: white;
+    border: none;
+}
+.custom-accordion-header::after {
+    display: none !important;
+}
+
+.custom-accordion-header{
+    background-color: black !important;
+}
+.custom-accordion-header.active {
+    background-color: #1a1a1a;
+}
