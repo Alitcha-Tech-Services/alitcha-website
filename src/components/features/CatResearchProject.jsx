@@ -29,7 +29,7 @@ function CatResearchProject() {
                     <h3 className="text-start text-color-primary">Lorem ipsum reiklppook</h3>
                     <p className="text-black text-justify">Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. </p>
                     {/* <NavLink to={path}>{anchorText} <GoArrowRight className="mx-2 text-color-primary" /></NavLink> */}
-                    <NavLink to="/">
+                    <NavLink to="/home/solution/1/detail">
                         <div className="text-color-primary text-start d-flex flex-row" style={{ width: '130px' }}>
                             <p>Voir plus</p>
                             <p><GoArrowRight className="text-color-primary" /></p>
