@@ -25,8 +25,8 @@ export default function Home(){
                 </div>
 
                 <div className="d-flex justify-content-center align-items-center">
-                    <Button as={NavLink} to='/joindre' className="GoArrowRightjoin button-hover"><GoArrowRight /> </Button>
-                    <Button as={NavLink} to='/joindre' className="text-center text-color-primary w-auto accueil-join-alitcha-button button-hover" type='button' >Rejoindre Alitcha</Button>
+                    <Button as={NavLink} to='/join' className="GoArrowRightjoin button-hover"><GoArrowRight /> </Button>
+                    <Button as={NavLink} to='/join' className="text-center text-color-primary w-auto accueil-join-alitcha-button button-hover" type='button' >Rejoindre Alitcha</Button>
                 </div>
             </div>
             <div className="mb-5">

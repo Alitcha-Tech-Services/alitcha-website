@@ -6,8 +6,10 @@ import Modal from 'react-bootstrap/Modal';
 import { IoCloseCircle } from "react-icons/io5";
 import { Button, Form, Collapse } from 'react-bootstrap';
 
+import solutionSearchProjectAnd from '../../assets/solutionSearchProjectAnd.jpeg';
 import '../../styles/features/filterComponents.css';
-import CatResearchProject from './CatResearchProject';
+/* // import CatResearchProject from './CatResearchProject'; */
+import SolutionSearchProject from '../commons/SolutionSearchProject';
 
 function FilterComponents() {
 
@@ -17,6 +19,23 @@ function FilterComponents() {
         {title: 'TYPE DE CONTENU', content: ['Peau sensible2', 'Peaux grasses2', 'Peaux grasses à imperfections2', 'Peaux matures2', 'Peaux mixtes2', 'Peaux normales2', 'Peaux sèches2', 'Peaux très sèches2']},
         {title: 'TYPE DE PEAU', content: ['Peau sensible3', 'Peaux grasses3', 'Peaux grasses à imperfections3', 'Peaux matures3', 'Peaux mixtes3', 'Peaux normales3', 'Peaux sèches3', 'Peaux très sèches3']},
         {title: 'TYPE DE CHEVEUX', content: ['Peau sensible4', 'Peaux grasses4', 'Peaux grasses à imperfections4', 'Peaux matures4', 'Peaux mixtes4', 'Peaux normales4', 'Peaux sèches4', 'Peaux très sèches4']},
+    ];
+
+    const dataInfos = [
+        { container: 'Peau sensible' , indexId: '1', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peau sensible' , indexId: '2', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peau sensible' , indexId: '3', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux matures' , indexId: '4', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux matures' , indexId: '5', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux matures' , indexId: '6', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux normales' , indexId: '7', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux normales' , indexId: '8', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux normales' , indexId: '9', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux sèches' , indexId: '10', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux sèches' , indexId: '11', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peaux sèches' , indexId: '12', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peau sensible1' , indexId: '13', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
+        { container: 'Peau sensible1' , indexId: '14', image: solutionSearchProjectAnd, title: 'Lorem ipsum', text: "Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus." },
     ];
 
     const [fullscreen, setFullscreen] = useState(true);
@@ -58,22 +77,40 @@ function FilterComponents() {
     };
 
     const [activeButton, setActiveButton] = useState(data[0].content[0]);
-
-
+    const [filteredResults, setFilteredResults] = useState([]);
     const [activeKey, setActiveKey] = useState(null);
 
     const toggleActiveKey = (key) => {
         setActiveKey(activeKey === key ? null : key);
     };
 
-    const applyFilters = () => {
-        console.log('Filters applied:', selectedFilters);
-    };
-
-
     const toggleContent = (content) => {
         setActiveButton(activeButton === content ? null : content);
     };
+
+        // const applyFilters = () => {
+        //     const results = selectedFilters.map((filter, index) => (
+        //         // <SolutionSearchProject key={index} title={filter} />
+        //         if (activeButton===content && content === filter.container){
+        //             <SolutionSearchProject key={index} indexId={filter.indexId} image={filter.image} parentTitle={filter.container} childTitle={filter.title} text={filter.text} />
+        //         }
+        //     ));
+        //     setFilteredResults(results);
+        //     setShow(false);
+        // };
+
+        const applyFilters = () => {
+            const results = dataInfos
+                .filter(filter => filter.container === activeButton)
+                .flatMap(filter => filter.items)
+                .filter(item => selectedFilters.includes(item.title))
+                .map((item, index) => (
+                    <SolutionSearchProject key={index} indexId={item.indexId} image={item.image} parentTitle={activeButton} childTitle={item.title} text={item.text} />
+                ));
+            
+            setFilteredResults(results);
+            setShow(false);
+        };
 
     return (
         <div>
@@ -108,7 +145,14 @@ function FilterComponents() {
                                 <div className="accordion-item bg-transparent border border-0">
                                     <div className="accordion-body text-white d-flex flex-row justify-content-center">
                                         <div className="filter-solution-content">
-                                            <CatResearchProject /> <CatResearchProject /> <CatResearchProject /> <CatResearchProject />
+                                            {/* <CatResearchProject /> <CatResearchProject /> <CatResearchProject /> <CatResearchProject /> */}
+                                            {filteredResults}
+                                            {/* <SolutionSearchProject indexId={dataInfos[0].indexId} image={dataInfos[0].image} parentTitle={dataInfos[0].container} childTitle={dataInfos[0].title} text={dataInfos[0].text} />
+                                            <SolutionSearchProject indexId={dataInfos[1].indexId} image={dataInfos[1].image} parentTitle={dataInfos[1].container} childTitle={dataInfos[1].title} text={dataInfos[1].text} />
+                                            <SolutionSearchProject indexId={dataInfos[2].indexId} image={dataInfos[2].image} parentTitle={dataInfos[2].container} childTitle={dataInfos[2].title} text={dataInfos[2].text} />
+                                            <SolutionSearchProject indexId={dataInfos[3].indexId} image={dataInfos[3].image} parentTitle={dataInfos[3].container} childTitle={dataInfos[3].title} text={dataInfos[3].text} />
+                                            <SolutionSearchProject indexId={dataInfos[4].indexId} image={dataInfos[4].image} parentTitle={dataInfos[4].container} childTitle={dataInfos[4].title} text={dataInfos[4].text} />
+                                            <SolutionSearchProject indexId={dataInfos[5].indexId} image={dataInfos[5].image} parentTitle={dataInfos[5].container} childTitle={dataInfos[5].title} text={dataInfos[5].text} /> */}
                                         </div>
                                     </div>
                                 </div>
@@ -126,6 +170,7 @@ function FilterComponents() {
                     <div className='' style={{ width: '90%' }}>
                         <div>
                             <div className="filter-component">
+                            <Form>
                                 <div className='d-flex flex-row flex-wrap justify-content-between mb-5 mt-4'>
                                     <div className='d-flex flex-row flex-wrap justify-content-center'>
                                         {
@@ -178,9 +223,10 @@ function FilterComponents() {
                                     </div>
                                     <div className='d-fex flex-column justify-content-center background-primary mb-5' style={{ height: '3px' }}></div>
                                     <div className='d-flex flex-row justify-content-center'>
-                                        <Button variant="primary" onClick={() => applyFilters()} className="w-auto background-primary text-white button-hover border-border-primary mb-5">APPLIQUER</Button>
+                                        <Button variant="primary" type='submit' onClick={() => applyFilters()} className="w-auto background-primary text-white button-hover border-border-primary mb-5">APPLIQUER</Button>
                                     </div>
                                 </div>
+                            </Form>
                             </div>
                         </div>
                     </div>
