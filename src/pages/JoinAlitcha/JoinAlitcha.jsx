@@ -1,10 +1,10 @@
-import './RejoindreAlitchaPage.css';
+import './JoinAlitcha.css';
 import ConditionSection from '../../components/features/ConditionSection.jsx';
-import AdhesionForm from '../../components/features/AdhesionForm'
-import Newsletter from '../../components/features/Newsletter';
-import TitleTypeWriter from "./../../components/features/TitleTypeWriter";
+import AdhesionForm from '../../components/features/AdhesionForm.jsx'
+import Newsletter from '../../components/features/Newsletter.jsx';
+import TitleTypeWriter from "../../components/features/TitleTypeWriter.jsx";
 
-export default function RejoindreAlitchaPage(){
+export default function JoinAlitcha(){
 
     const text = " dolor sit amet, consectetur adipiscing elit.";
 
